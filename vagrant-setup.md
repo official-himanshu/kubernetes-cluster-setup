@@ -59,11 +59,11 @@
 	$ sudo kubeadm init --pod-network-cidr= --apiserver-advertise-address=192.168.33.10
 
 ### Bring up the pod network using calico CNI
-kubectl apply -f https://docs.projectcalico.org/v3.0/getting-started/kubernetes/installation/hosted/kubeadm/1.7/calico.yml
+	$ kubectl apply -f https://docs.projectcalico.org/v3.0/getting-started/kubernetes/installation/hosted/kubeadm/1.7/calico.yml
 
 
 
-#### To be perform on nodes
+## To be perform on nodes
 
 	$ kubeadm join 192.168.33.10:6443 --token w195lj.5kkn83dmhai0gl8d \
 >     --discovery-token-ca-cert-hash sha256:e42dfaba10674f4bfd88feb8dbd05f9cfde2ddef0bf5e626fb783e85478925f4
